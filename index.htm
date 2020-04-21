@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input id="event" type="text" placeholder="Your event"/>
+		<input id="years" placeholder="year" type="number" min="2020" max="2050" />
+		<select id="monthes"></select>
+        <input id="days" type="number" placeholder="days" min="0" max="31">
+        
+        <button type="submit" onclick="countDown()"> Start Count Down</button>
+        <p id="userEvent"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
