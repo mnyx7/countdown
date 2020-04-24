@@ -23,9 +23,10 @@ function countDown() {
         let minutes = Math.floor((parseInt(distance) % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((parseInt(distance) % (1000 * 60)) / 1000);
 
-        document.getElementById("userEvent").innerHTML = "Till " + event + " left " + days + "d " + hours + "h "
+        document.getElementById("modalTitle").innerHTML = "Till " + event + " left " ;
+        document.getElementById("userEvent").innerHTML =  days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
-
+        
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("userEvent").innerHTML = "Expired";
